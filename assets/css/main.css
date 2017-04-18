@@ -3,6 +3,8 @@ body{
   font-family: Arial, sans-serif;
   margin: 0px 0px;
 }
+
+/*MENU*/
 .menu{
   background-color: #CA3C25;
   margin: 0px 0px;
@@ -10,8 +12,8 @@ body{
 
 .menu li{
   display: inline-block;
-  padding: 20px 20px 20px 50px;
   list-style: none;
+  padding: 20px 20px 20px 50px;
 }
 
 .menu a{
@@ -24,15 +26,44 @@ body{
   text-decoration: none;
 }
 
+/*CONTENT SECTION PANDA*/
 section{
-  padding: 10px 50px 10px 100px;
   height: 100%;
+  padding: 10px 50px 10px 100px;
 }
 
+/*BUTTON IN SECTION PANDA*/
+.sub-menu{
+  display: block;
+  margin: 0px 0px;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.sub-menu li{
+  display: inline-block;
+  list-style: none;
+  padding: 20px 0px;
+}
+
+.sub-menu button{
+  background-color: #CA3C25;
+  border: none;
+  color: whitesmoke;
+  padding: 10px;
+  width: 330px;
+}
+
+.sub-menu button:hover{
+  color: black;
+  text-decoration: none;
+}
+
+/*FOTOS IN SECTION PANDA*/
 figure{
-  position: relative;
   display: inline-block;
   padding: 10px;
+  position: relative;
   -moz-margin-before: 0em;
   -ms-margin-before: 0em;
   -webkit-margin-before: 0em;
@@ -48,50 +79,27 @@ figure{
 }
 
 span{
-  position: absolute;
   color: whitesmoke;
   cursor: pointer;
   left: 20px;
+  position: absolute;
   top: 20px;
+  z-index: 1;
 }
 
 img{
   border: 5px solid #595959;
   height: 200px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  margin: 0px 0px;
   width: 200px;
-  margin: 0px 0px;
 }
 
-.sub-menu{
-  display: block;
-  margin: 0px 0px;
-  width: 100%;
-  padding-left: 0px;
-}
-
-.sub-menu li{
-  display: inline-block;
-  padding: 20px 0px;
-  list-style: none;
-}
-
-.sub-menu button{
-  background-color: #CA3C25;
-  border: none;
-  color: whitesmoke;
-  width: 330px;
-  padding: 10px;
-}
-
-.sub-menu button:hover{
-  color: black;
-  text-decoration: none;
-}
-
-p{
-  color: #E7BD4C;
-}
-
+/*CONTENT TEXT IN SECTION PANDA OF HISTORY AND EXTINTION*/
 .section-content-panda{
   display: block;
 }
@@ -101,4 +109,8 @@ p{
   margin-right: 50px;
   text-align: justify;
   width: 40%;
+}
+
+p{
+  color: #E7BD4C;
 }
